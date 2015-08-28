@@ -169,7 +169,7 @@ func getInstructions(c, o string) []string {
 }
 
 func isNear() bool {
-	sensorval := tinyev3lib.ReadSensorValue(0)
+	sensorval := ugolibev3.ReadSensorValue(0)
 	val, err := strconv.ParseInt(sensorval[:len(sensorval)-1], 10, 16)
 	errorcheck(err)
 	if val < 50 {
@@ -178,7 +178,7 @@ func isNear() bool {
 	return false
 }
 func touches() bool {
-	sensorval := tinyev3lib.ReadSensorValue(0)
+	sensorval := ugolibev3.ReadSensorValue(0)
 	val, err := strconv.ParseInt(sensorval[:len(sensorval)-1], 10, 16)
 	errorcheck(err)
 	if val == 1 {
