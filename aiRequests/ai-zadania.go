@@ -8,7 +8,7 @@ package aiRequests
 import (
 	//sterowanie motorami, sensorami
 	//"github.com/ldmberman/GoEV3/Motor"
-	"tinyev3lib"
+	"github.com/janekjan/ugolibev3"
 	//uruchamianie podprogramów
 	"io/ioutil"
 	"os/exec"
